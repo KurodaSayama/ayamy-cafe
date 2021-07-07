@@ -8,12 +8,10 @@
 # testing
 /coverage
 
-# production
-/build
-
 # IDEs and editors
 /.idea
 /.vscode
+/.history
 
 # misc
 .DS_Store
