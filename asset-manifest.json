@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.df3029d7.chunk.js",
-    "main.js.map": "/static/js/main.df3029d7.chunk.js.map",
+    "main.js": "/static/js/main.f08da775.chunk.js",
+    "main.js.map": "/static/js/main.f08da775.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d370e6f7.js",
     "runtime-main.js.map": "/static/js/runtime-main.d370e6f7.js.map",
     "static/js/2.83d09b58.chunk.js": "/static/js/2.83d09b58.chunk.js",
     "static/js/2.83d09b58.chunk.js.map": "/static/js/2.83d09b58.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.83d09b58.chunk.js.LICENSE.txt": "/static/js/2.83d09b58.chunk.js.LICENSE.txt"
+    "static/js/2.83d09b58.chunk.js.LICENSE.txt": "/static/js/2.83d09b58.chunk.js.LICENSE.txt",
+    "static/media/french_toast.6f85654f.jpg": "/static/media/french_toast.6f85654f.jpg",
+    "static/media/sukiyaki.5bdf649a.jpg": "/static/media/sukiyaki.5bdf649a.jpg",
+    "static/media/yakisoba.9adf17e8.jpg": "/static/media/yakisoba.9adf17e8.jpg",
+    "static/media/yakitori.c5eb7960.jpg": "/static/media/yakitori.c5eb7960.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d370e6f7.js",
     "static/js/2.83d09b58.chunk.js",
-    "static/js/main.df3029d7.chunk.js"
+    "static/js/main.f08da775.chunk.js"
   ]
 }
