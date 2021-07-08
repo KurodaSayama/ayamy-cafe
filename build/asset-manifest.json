@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b28fc4d2.chunk.css",
-    "main.js": "/static/js/main.3849560b.chunk.js",
-    "main.js.map": "/static/js/main.3849560b.chunk.js.map",
+    "main.js": "/static/js/main.aeb1a60b.chunk.js",
+    "main.js.map": "/static/js/main.aeb1a60b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d370e6f7.js",
     "runtime-main.js.map": "/static/js/runtime-main.d370e6f7.js.map",
     "static/js/2.eea24404.chunk.js": "/static/js/2.eea24404.chunk.js",
@@ -11,15 +11,15 @@
     "static/css/main.b28fc4d2.chunk.css.map": "/static/css/main.b28fc4d2.chunk.css.map",
     "static/js/2.eea24404.chunk.js.LICENSE.txt": "/static/js/2.eea24404.chunk.js.LICENSE.txt",
     "static/media/ayamy-cooking.ec2a38d1.png": "/static/media/ayamy-cooking.ec2a38d1.png",
-    "static/media/french-toast-400.6d9783d1.jpg": "/static/media/french-toast-400.6d9783d1.jpg",
-    "static/media/sukiyaki-400.401dd456.jpg": "/static/media/sukiyaki-400.401dd456.jpg",
-    "static/media/yakisoba-400.28dda6b0.jpg": "/static/media/yakisoba-400.28dda6b0.jpg",
-    "static/media/yakitori-400.9373f640.jpg": "/static/media/yakitori-400.9373f640.jpg"
+    "static/media/french-toast-600.8e1d67d4.jpg": "/static/media/french-toast-600.8e1d67d4.jpg",
+    "static/media/sukiyaki-600.0c82a74b.jpg": "/static/media/sukiyaki-600.0c82a74b.jpg",
+    "static/media/yakisoba-600.22278aef.jpg": "/static/media/yakisoba-600.22278aef.jpg",
+    "static/media/yakitori-600.1fad1dc8.jpg": "/static/media/yakitori-600.1fad1dc8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d370e6f7.js",
     "static/js/2.eea24404.chunk.js",
     "static/css/main.b28fc4d2.chunk.css",
-    "static/js/main.3849560b.chunk.js"
+    "static/js/main.aeb1a60b.chunk.js"
   ]
 }
