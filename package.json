@@ -10,6 +10,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
+    "react-twitter-widgets": "^1.10.0",
     "typescript": "latest"
   },
   "scripts": {
