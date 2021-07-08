@@ -1,4 +1,5 @@
 import React from 'react';
+import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,6 +8,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import AppBar from './AppBar';
 import Hero from './Hero';
 import ImageList from './ImageList';
+import github_mark from './images/github-mark.png';
+import github_logo from './images/github-logo.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -16,11 +19,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     padding: theme.spacing(6),
     color: theme.palette.primary.contrastText,
+    textAlign: 'center'
   },
-  coffeeIcon: {
-    display: 'block',
-    margin: 'auto',
-  }
 }));
 
 export default function App() {
@@ -36,13 +36,18 @@ export default function App() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <FontAwesomeIcon icon={faCoffee} size="2x" className={classes.coffeeIcon} />
+        <FontAwesomeIcon icon={faCoffee} size="2x" />
         <Typography variant="h6" align="center">
           あやみカフェ
         </Typography>
         <Typography variant="body2" align="center">
           Ayamy Cafe
         </Typography>
+        <Box m={2} />
+        <a href="https://github.com/KurodaSayama/ayamy-cafe" target="_blank">
+          <img src={github_mark} />
+          <img src={github_logo} />
+        </a>
       </footer>
       {/* End footer */}
     </React.Fragment>

@@ -3,9 +3,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { Timeline } from 'react-twitter-widgets';
+import { Timeline, Follow } from 'react-twitter-widgets';
 import YouTube from 'react-youtube';
-import ayamyCooking from './images/ayamy_cooking.png';
+import ayamyCooking from './images/ayamy-cooking.png';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -58,16 +58,22 @@ export default function Hero() {
           <Grid item xs={12} className={classes.embedsContainer}>
             <Grid container spacing={4}>
               <Grid item xs={12} md={8}>
-                <YouTube videoId="dFzSIFr4pHU" containerClassName={"youtubeContainer"} />
+                <YouTube videoId="dFzSIFr4pHU" containerClassName={'youtubeContainer'} />
               </Grid>
               <Grid item xs={12} md={4}>
+                <Follow
+                  username={'ayamy_garubinu'}
+                  options={{
+                    size: 'large'
+                  }}
+                />
                 <Timeline
                   dataSource={{
                     sourceType: 'profile',
                     screenName: 'ayamy_garubinu'
                   }}
                   options={{
-                    height: '450px'
+                    height: '430px'
                   }}
                 />
               </Grid>
