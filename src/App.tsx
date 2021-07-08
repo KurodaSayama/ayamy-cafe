@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.primary.main,
     padding: theme.spacing(6),
+    color: theme.palette.primary.contrastText,
   },
 }));
 
@@ -46,7 +47,7 @@ export default function App() {
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+        <Typography variant="subtitle1" align="center" component="p">
           Something here to give the footer a purpose!
         </Typography>
       </footer>

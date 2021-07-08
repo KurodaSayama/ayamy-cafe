@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
   },
   imageList: {
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
@@ -23,23 +22,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const itemData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function SingleLineImageList() {
   const classes = useStyles();
 
