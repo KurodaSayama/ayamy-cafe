@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.b28fc4d2.chunk.css",
-    "main.js": "/static/js/main.aeb1a60b.chunk.js",
-    "main.js.map": "/static/js/main.aeb1a60b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d370e6f7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d370e6f7.js.map",
-    "static/js/2.eea24404.chunk.js": "/static/js/2.eea24404.chunk.js",
-    "static/js/2.eea24404.chunk.js.map": "/static/js/2.eea24404.chunk.js.map",
+    "main.css": "/static/css/main.a3cf2aaa.chunk.css",
+    "main.js": "/static/js/main.14aaf72a.chunk.js",
+    "main.js.map": "/static/js/main.14aaf72a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
+    "static/js/2.20df9694.chunk.js": "/static/js/2.20df9694.chunk.js",
+    "static/js/2.20df9694.chunk.js.map": "/static/js/2.20df9694.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b28fc4d2.chunk.css.map": "/static/css/main.b28fc4d2.chunk.css.map",
-    "static/js/2.eea24404.chunk.js.LICENSE.txt": "/static/js/2.eea24404.chunk.js.LICENSE.txt",
+    "static/css/main.a3cf2aaa.chunk.css.map": "/static/css/main.a3cf2aaa.chunk.css.map",
+    "static/js/2.20df9694.chunk.js.LICENSE.txt": "/static/js/2.20df9694.chunk.js.LICENSE.txt",
     "static/media/ayamy-cooking.ec2a38d1.png": "/static/media/ayamy-cooking.ec2a38d1.png",
-    "static/media/french-toast-600.8e1d67d4.jpg": "/static/media/french-toast-600.8e1d67d4.jpg",
-    "static/media/sukiyaki-600.0c82a74b.jpg": "/static/media/sukiyaki-600.0c82a74b.jpg",
-    "static/media/yakisoba-600.22278aef.jpg": "/static/media/yakisoba-600.22278aef.jpg",
-    "static/media/yakitori-600.1fad1dc8.jpg": "/static/media/yakitori-600.1fad1dc8.jpg"
+    "static/media/bento.730e7202.jpg": "/static/media/bento.730e7202.jpg",
+    "static/media/birthday-cake.fdcf797e.jpg": "/static/media/birthday-cake.fdcf797e.jpg",
+    "static/media/french-toast.8e1d67d4.jpg": "/static/media/french-toast.8e1d67d4.jpg",
+    "static/media/hamburguer.b663e158.jpg": "/static/media/hamburguer.b663e158.jpg",
+    "static/media/katsu-curry.9b02ce32.jpg": "/static/media/katsu-curry.9b02ce32.jpg",
+    "static/media/napolitan-pasta.7f096b73.jpg": "/static/media/napolitan-pasta.7f096b73.jpg",
+    "static/media/omurice.3a93a1c4.jpg": "/static/media/omurice.3a93a1c4.jpg",
+    "static/media/sukiyaki.0c82a74b.jpg": "/static/media/sukiyaki.0c82a74b.jpg",
+    "static/media/yakisoba.22278aef.jpg": "/static/media/yakisoba.22278aef.jpg",
+    "static/media/yakitori.1fad1dc8.jpg": "/static/media/yakitori.1fad1dc8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d370e6f7.js",
-    "static/js/2.eea24404.chunk.js",
-    "static/css/main.b28fc4d2.chunk.css",
-    "static/js/main.aeb1a60b.chunk.js"
+    "static/js/runtime-main.849ea8fb.js",
+    "static/js/2.20df9694.chunk.js",
+    "static/css/main.a3cf2aaa.chunk.css",
+    "static/js/main.14aaf72a.chunk.js"
   ]
 }
