@@ -3,14 +3,17 @@
   "version": "4.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "latest",
-    "@material-ui/icons": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
     "react-twitter-widgets": "^1.10.0",
+    "react-youtube": "^7.13.1",
     "typescript": "latest"
   },
   "scripts": {

@@ -3,7 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import appBarIcon from './AppBarIcon.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -17,7 +18,7 @@ export default function AppBar() {
   return (
     <MuiAppBar position="relative">
       <Toolbar>
-        <img src={appBarIcon} className={classes.icon} />
+        <FontAwesomeIcon icon={faCoffee} size="2x" className={classes.icon} />
         <Grid container>
           <Grid item xs={12}>
             <Typography variant="h6" color="inherit" noWrap>

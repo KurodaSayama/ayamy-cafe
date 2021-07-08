@@ -52,7 +52,7 @@ export default function SingleLineImageList() {
             <img src={item.img} alt={item.title} />
             <ImageListItemBar
               title={item.title}
-              subtitle={<span>値段：{item.price}</span>}
+              subtitle={<span>価格：{item.price}</span>}
               classes={{
                 root: classes.titleBar,
               }}

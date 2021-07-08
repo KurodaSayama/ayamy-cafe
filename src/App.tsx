@@ -2,34 +2,26 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import AppBar from './AppBar';
 import Hero from './Hero';
 import ImageList from './ImageList';
 
 const useStyles = makeStyles((theme) => ({
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
+  main: {
+    background: 'repeating-linear-gradient(110deg,#fff,#fff 50px,#ffe1e0 50px,#ffe1e0 100px);',
   },
   footer: {
     backgroundColor: theme.palette.primary.main,
     padding: theme.spacing(6),
     color: theme.palette.primary.contrastText,
   },
+  coffeeIcon: {
+    display: 'block',
+    margin: 'auto',
+  }
 }));
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function App() {
   const classes = useStyles();
@@ -38,17 +30,18 @@ export default function App() {
     <React.Fragment>
       <CssBaseline />
       <AppBar />
-      <main>
+      <main className={classes.main}>
         <Hero />
         <ImageList />
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
+        <FontAwesomeIcon icon={faCoffee} size="2x" className={classes.coffeeIcon} />
+        <Typography variant="h6" align="center">
+          あやみカフェ
         </Typography>
-        <Typography variant="subtitle1" align="center" component="p">
-          Something here to give the footer a purpose!
+        <Typography variant="body2" align="center">
+          Ayamy Cafe
         </Typography>
       </footer>
       {/* End footer */}
