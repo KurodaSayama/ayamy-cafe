@@ -1,0 +1,9 @@
+.imageZoom {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.imageZoom:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}

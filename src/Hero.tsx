@@ -1,4 +1,4 @@
-import './css/Hero.css';
+import './css/YouTube.css';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
   },
   embedsContainer: {
     display: 'contents',
+  },
+  textAlignCenter: {
+    textAlign: 'center',
   },
 }));
 
@@ -40,7 +43,7 @@ export default function Hero() {
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                      彼氏たちの素敵でキュートで面白い（芸人ではない）彼女が作った料理を鑑賞するための非公式サイト。
+                      彼氏たちの素敵で可愛いで面白い（芸人ではない）彼女が作った料理を鑑賞するための非公式サイト。
         </Typography>
                   </Grid>
                   <Grid item xs={12}>
@@ -50,8 +53,8 @@ export default function Hero() {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <img src={ayamyCooking} className={classes.ayamyCooking} />
+              <Grid item xs={12} md={4} className={classes.textAlignCenter}>
+                <img src={ayamyCooking} className={classes.ayamyCooking} alt='Ayamy Cooking' />
               </Grid>
             </Grid>
           </Grid>

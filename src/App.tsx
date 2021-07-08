@@ -44,9 +44,9 @@ export default function App() {
           Ayamy Cafe
         </Typography>
         <Box m={2} />
-        <a href="https://github.com/KurodaSayama/ayamy-cafe" target="_blank">
-          <img src={github_mark} />
-          <img src={github_logo} />
+        <a href="https://github.com/KurodaSayama/ayamy-cafe" target="_blank" rel="noreferrer">
+          <img src={github_mark} alt='GitHub Mark' />
+          <img src={github_logo} alt='GitHub Logo' />
         </a>
       </footer>
       {/* End footer */}
