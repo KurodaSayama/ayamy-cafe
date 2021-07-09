@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.a3cf2aaa.chunk.css",
-    "main.js": "/static/js/main.14aaf72a.chunk.js",
-    "main.js.map": "/static/js/main.14aaf72a.chunk.js.map",
+    "main.js": "/static/js/main.83766e15.chunk.js",
+    "main.js.map": "/static/js/main.83766e15.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
-    "static/js/2.20df9694.chunk.js": "/static/js/2.20df9694.chunk.js",
-    "static/js/2.20df9694.chunk.js.map": "/static/js/2.20df9694.chunk.js.map",
+    "static/js/2.b8aa57da.chunk.js": "/static/js/2.b8aa57da.chunk.js",
+    "static/js/2.b8aa57da.chunk.js.map": "/static/js/2.b8aa57da.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.a3cf2aaa.chunk.css.map": "/static/css/main.a3cf2aaa.chunk.css.map",
-    "static/js/2.20df9694.chunk.js.LICENSE.txt": "/static/js/2.20df9694.chunk.js.LICENSE.txt",
+    "static/js/2.b8aa57da.chunk.js.LICENSE.txt": "/static/js/2.b8aa57da.chunk.js.LICENSE.txt",
     "static/media/ayamy-cooking.ec2a38d1.png": "/static/media/ayamy-cooking.ec2a38d1.png",
     "static/media/bento.730e7202.jpg": "/static/media/bento.730e7202.jpg",
     "static/media/birthday-cake.fdcf797e.jpg": "/static/media/birthday-cake.fdcf797e.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.849ea8fb.js",
-    "static/js/2.20df9694.chunk.js",
+    "static/js/2.b8aa57da.chunk.js",
     "static/css/main.a3cf2aaa.chunk.css",
-    "static/js/main.14aaf72a.chunk.js"
+    "static/js/main.83766e15.chunk.js"
   ]
 }
