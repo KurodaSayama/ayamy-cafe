@@ -8,6 +8,7 @@ import omurice from './images/image-list/omurice.jpg';
 import katsu_curry from './images/image-list/katsu-curry.jpg';
 import bento from './images/image-list/bento.jpg';
 import hamburguer from './images/image-list/hamburguer.jpg';
+import oyakodon from './images/image-list/oyakodon.jpg';
 
 const itemData = [
   {
@@ -78,6 +79,13 @@ const itemData = [
     title: 'ハンバーガー (Hamburguer)',
     price: '????',
     videoId: '4MdM34zBqI8',
+    modalCols: 4,
+  },
+  {
+    img: oyakodon,
+    title: '親子丼 (Oyakdon)',
+    price: '????',
+    videoId: 'dMYMXT6uGrY',
     modalCols: 4,
   },
 ];
