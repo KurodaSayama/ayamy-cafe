@@ -7,11 +7,15 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "qrcode.react": "^1.0.1",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
+    "react-swipeable-views": "^0.14.0",
+    "react-to-print": "^2.12.6",
     "react-twitter-widgets": "^1.10.0",
     "react-youtube": "^7.13.1",
     "typescript": "latest"
@@ -40,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.8"
+    "@types/qrcode.react": "^1.0.2",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-swipeable-views": "^0.13.1"
   }
 }
