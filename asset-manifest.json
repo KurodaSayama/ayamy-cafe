@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a3cf2aaa.chunk.css",
-    "main.js": "/static/js/main.f1356834.chunk.js",
-    "main.js.map": "/static/js/main.f1356834.chunk.js.map",
+    "main.js": "/static/js/main.270e1d55.chunk.js",
+    "main.js.map": "/static/js/main.270e1d55.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.c1ddaac8.chunk.js": "/static/js/2.c1ddaac8.chunk.js",
@@ -14,7 +14,7 @@
     "static/media/bento.730e7202.jpg": "/static/media/bento.730e7202.jpg",
     "static/media/birthday-cake.fdcf797e.jpg": "/static/media/birthday-cake.fdcf797e.jpg",
     "static/media/french-toast.8e1d67d4.jpg": "/static/media/french-toast.8e1d67d4.jpg",
-    "static/media/hamburguer.b663e158.jpg": "/static/media/hamburguer.b663e158.jpg",
+    "static/media/hamburger.b663e158.jpg": "/static/media/hamburger.b663e158.jpg",
     "static/media/katsu-curry.9b02ce32.jpg": "/static/media/katsu-curry.9b02ce32.jpg",
     "static/media/napolitan-pasta.7f096b73.jpg": "/static/media/napolitan-pasta.7f096b73.jpg",
     "static/media/omurice.3a93a1c4.jpg": "/static/media/omurice.3a93a1c4.jpg",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.c1ddaac8.chunk.js",
     "static/css/main.a3cf2aaa.chunk.css",
-    "static/js/main.f1356834.chunk.js"
+    "static/js/main.270e1d55.chunk.js"
   ]
 }
