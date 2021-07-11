@@ -9,8 +9,21 @@ import katsu_curry from './images/image-list/katsu-curry.jpg';
 import bento from './images/image-list/bento.jpg';
 import hamburguer from './images/image-list/hamburguer.jpg';
 import oyakodon from './images/image-list/oyakodon.jpg';
+import steak from './images/image-list/steak.jpg';
 
 const itemData = [
+  {
+    img: steak,
+    title: 'ステーキ (Steak)',
+    price: '????',
+    videoId: 'IiuOwq97BRo',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: sukiyaki,
     title: 'すき焼き (Sukiyaki)',
@@ -133,7 +146,7 @@ const itemData = [
   },
   {
     img: oyakodon,
-    title: '親子丼 (Oyakdon)',
+    title: '親子丼 (Oyakodon)',
     price: '????',
     videoId: 'dMYMXT6uGrY',
     modalCols: 4,
