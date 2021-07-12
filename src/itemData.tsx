@@ -124,7 +124,7 @@ const itemData = [
     recipeCard: true,
     ingredientsEN: [
       { name: '100g Spaghetti' },
-      { name: '1 Pineapple Sausages' },
+      { name: '1 Pineapple Sausage' },
       { name: '1/2 Onion' },
       { name: '1 Green Pepper' },
       { name: '50g Mushroom' },
@@ -136,7 +136,7 @@ const itemData = [
     ],
     ingredientsJP: [],
     stepsEN: [
-      { step: 'Slice the Sausages diagonally', time: 1473 },
+      { step: 'Slice the Sausage diagonally', time: 1473 },
       { step: 'Slice the Mushroom', time: 1654 },
       { step: 'Slice the Onion', time: 1822 },
       { step: 'Slice the Green Pepper', time: 1981 },
@@ -147,7 +147,7 @@ const itemData = [
       { step: 'Add the Mushroom to the pan and continue stirring for 3 minutes and then turn off the heat', time: 2860 },
       { step: 'Add water to a pot and bring it to a boil', time: 3063 },
       { step: 'Add the Spaghetti to the pot and cook it for 15 minutes', time: 3480 },
-      { step: 'Turn on the heat again on the pan with the Sausages, Onion and Mushroom, add the Butter and stir', time: 4433 },
+      { step: 'Turn on the heat again on the pan with the Sausage, Onion and Mushroom, add the Butter and stir', time: 4433 },
       { step: 'After the Butter has melted, add the Green Pepper and continue stirring for 1 minute', time: 4551 },
       { step: 'Add the Spaghetti to the pan, add more Ketchup to taste and continue stirring for 2 minutes', time: 4633 },
       { step: 'Serve on a plate, add the Grated Cheese and a pinch of Ground Parsley on top', time: 4866 },
