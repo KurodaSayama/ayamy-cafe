@@ -18,13 +18,14 @@ import Tab from '@material-ui/core/Tab';
 import SwipeableViews from 'react-swipeable-views';
 import YouTube from 'react-youtube';
 import itemData from './itemData';
-import QRCode from  'qrcode.react';
+import QRCode from 'qrcode.react';
 import ReactToPrint from "react-to-print";
 import IconButton from '@material-ui/core/IconButton';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 
 import PrintIcon from '@material-ui/icons/Print';
+import CloseIcon from '@material-ui/icons/Close';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -85,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px',
   },
   step: {
-    marginBottom:'10px',
+    marginBottom: '10px',
     fontSize: '12px',
   },
   icon: {
@@ -98,11 +99,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '20px solid #ffe1e0',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(3),
     width: '100%',
     outline: 'none',
-    maxHeight: '90vh',
+    maxHeight: '85vh',
     overflow: 'auto',
+  },
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: 'white',
+    mixBlendMode: 'difference',
   },
 }));
 
@@ -125,7 +133,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box p={2}>
+        <Box padding={0} paddingTop={2}>
           {children}
         </Box>
       )}
@@ -140,7 +148,7 @@ function a11yProps(index: any) {
   };
 }
 
-function RecipeTabs (props: any) {
+function RecipeTabs(props: any) {
   const item = props.item
   const classes = useStyles();
   const theme = useTheme();
@@ -176,9 +184,9 @@ function RecipeTabs (props: any) {
         >
           <Tab className={classes.firstTab} label="ビデオ (Video)" {...a11yProps(0)} />
           {item.recipeCard &&
-          <Tab label="レシピ (Recipe)" {...a11yProps(1)} />
+            <Tab label="レシピ (Recipe)" {...a11yProps(1)} />
           }
-        </Tabs>      
+        </Tabs>
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           disableLazyLoading
@@ -188,7 +196,7 @@ function RecipeTabs (props: any) {
           <TabPanel value={value} index={0} dir={theme.direction}>
             <YouTube videoId={item.videoId} containerClassName={'youtubeContainer'} />
           </TabPanel>
-          <TabPanel  value={value} index={1} dir={theme.direction}>
+          <TabPanel value={value} index={1} dir={theme.direction}>
             <div ref={(el) => (printRef = el)}>
               <div className={classes.recipeCardHeader}>
                 <div>
@@ -210,78 +218,78 @@ function RecipeTabs (props: any) {
                   </div>
 
                   <Typography variant="h6" align="left">
-                  <Box display="none" displayPrint="box">
-                    {item.title}
-                  </Box>
-                  <Box displayPrint="none">
-                    {item.title}
-                    <ReactToPrint
-                      trigger={() => <IconButton aria-label="print">
-                        <PrintIcon/>
-                      </IconButton>}
-                      content={() => printRef}
-                    />
-                    <span>
-                      <ToggleButtonGroup
-                        value={language}
-                        exclusive
-                        onChange={handleLanguage}
-                        aria-label="Language select"
-                        size="small"
-                      >
-                        <ToggleButton value="en" aria-label="View in English" title="View in English">
-                          EN
+                    <Box display="none" displayPrint="box">
+                      {item.title}
+                    </Box>
+                    <Box displayPrint="none">
+                      {item.title}
+                      <ReactToPrint
+                        trigger={() => <IconButton aria-label="print">
+                          <PrintIcon />
+                        </IconButton>}
+                        content={() => printRef}
+                      />
+                      <span>
+                        <ToggleButtonGroup
+                          value={language}
+                          exclusive
+                          onChange={handleLanguage}
+                          aria-label="Language select"
+                          size="small"
+                        >
+                          <ToggleButton value="en" aria-label="View in English" title="View in English">
+                            EN
                         </ToggleButton>
-                        <ToggleButton value="jp" aria-label="日本語で見る" title="日本語で見る">
-                          JP
+                          <ToggleButton value="jp" aria-label="日本語で見る" title="日本語で見る">
+                            JP
                         </ToggleButton>
-                      </ToggleButtonGroup>
-                    </span>
-                  </Box>
+                        </ToggleButtonGroup>
+                      </span>
+                    </Box>
                   </Typography>
                 </div>
-                
+
                 <QRCode size={128} includeMargin fgColor="#cfb1b0" value={"http://www.youtube.com/watch?v=" + item.videoId} />
               </div>
-              { language === 'en' &&
-              <div>
-                <div className={classes.ingredients}>
-                  <h4>Ingredients</h4>
-                  <div>
-                  {item.ingredientsEN.map((ingredient: any, index: number) => (
-                    <span key={"ingredient-"+index}>{ingredient.name}, </span>
-                  ))}
+              {language === 'en' &&
+                <div>
+                  <div className={classes.ingredients}>
+                    <h4>Ingredients</h4>
+                    <div>
+                      {item.ingredientsEN.map((ingredient: any, index: number) => (
+                        <span key={"ingredient-" + index}>{ingredient.name}, </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={classes.steps}>
+                    <h4>Steps</h4>
+                    <div>
+                      {item.stepsEN.map((step: any, index: number) => (
+                        <div key={"step-" + index} className={classes.step}>{index + 1}. {step.step}</div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className={classes.steps}>
-                  <h4>Steps</h4>
-                  <div>
-                  {item.stepsEN.map((step: any, index: number) => (
-                    <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
-                  ))}
-                  </div>
-                </div>
-              </div>
               }
-              { language === 'jp' &&
-              <div>
-                <div className={classes.ingredients}>
-                  <h4>材料</h4>
-                  <div>
-                  {item.ingredientsJP.map((ingredient: any, index: number) => (
-                    <span key={"ingredient-"+index}>{ingredient.name}, </span>
-                  ))}
+              {language === 'jp' &&
+                <div>
+                  <div className={classes.ingredients}>
+                    <h4>材料</h4>
+                    <div>
+                      {item.ingredientsJP.map((ingredient: any, index: number) => (
+                        <span key={"ingredient-" + index}>{ingredient.name}, </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={classes.steps}>
+                    <h4>ステップ</h4>
+                    <div>
+                      {item.stepsJP.map((step: any, index: number) => (
+                        <div key={"step-" + index} className={classes.step}>{index + 1}. {step.step}</div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className={classes.steps}>
-                  <h4>ステップ</h4>
-                  <div>
-                  {item.stepsJP.map((step: any, index: number) => (
-                    <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
-                  ))}
-                  </div>
-                </div>
-              </div>
               }
             </div>
           </TabPanel>
@@ -299,8 +307,6 @@ export default function SingleLineImageList() {
   const lg = useMediaQuery(theme.breakpoints.up('lg'));
   const md = useMediaQuery(theme.breakpoints.up('md'));
   const sm = useMediaQuery(theme.breakpoints.up('sm'));
-
-  
 
   var cols;
   if (xl) {
@@ -367,6 +373,9 @@ export default function SingleLineImageList() {
         >
           <Fade in={index === openIndex}>
             <Container className={classes.paper} maxWidth="lg">
+              <IconButton aria-label="close" onClick={handleClose} className={classes.closeButton}>
+                <CloseIcon />
+              </IconButton>
               <Typography id={`transition-modal-title-${index}`} variant="h5" align="center">
                 {item.title}
               </Typography>
