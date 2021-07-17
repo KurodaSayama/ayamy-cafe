@@ -21,7 +21,11 @@ import itemData from './itemData';
 import QRCode from  'qrcode.react';
 import ReactToPrint from "react-to-print";
 import IconButton from '@material-ui/core/IconButton';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+
 import PrintIcon from '@material-ui/icons/Print';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
@@ -141,6 +145,7 @@ function RecipeTabs (props: any) {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+  const [language, setLanguage] = React.useState<string | null>('en');
   let printRef: any;
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
@@ -149,6 +154,12 @@ function RecipeTabs (props: any) {
 
   const handleChangeIndex = (index: number) => {
     setValue(index);
+  };
+
+  const handleLanguage = (event: React.MouseEvent<HTMLElement>, newAlignment: string | null) => {
+    if (newAlignment !== null) {
+      setLanguage(newAlignment);
+    }
   };
 
   return (
@@ -210,29 +221,68 @@ function RecipeTabs (props: any) {
                       </IconButton>}
                       content={() => printRef}
                     />
+                    <span>
+                      <ToggleButtonGroup
+                        value={language}
+                        exclusive
+                        onChange={handleLanguage}
+                        aria-label="Language select"
+                        size="small"
+                      >
+                        <ToggleButton value="en" aria-label="View in English" title="View in English">
+                          EN
+                        </ToggleButton>
+                        <ToggleButton value="jp" aria-label="日本語で見る" title="日本語で見る">
+                          JP
+                        </ToggleButton>
+                      </ToggleButtonGroup>
+                    </span>
                   </Box>
-                   
                   </Typography>
                 </div>
                 
                 <QRCode size={128} includeMargin fgColor="#cfb1b0" value={"http://www.youtube.com/watch?v=" + item.videoId} />
               </div>
-              <div className={classes.ingredients}>
-                <h4>Ingredients</h4>
-                <div>
-                {item.ingredientsEN.map((ingredient: any, index: number) => (
-                  <span key={"ingredient-"+index}>{ingredient.name}, </span>
-                ))}
+              { language === 'en' &&
+              <div>
+                <div className={classes.ingredients}>
+                  <h4>Ingredients</h4>
+                  <div>
+                  {item.ingredientsEN.map((ingredient: any, index: number) => (
+                    <span key={"ingredient-"+index}>{ingredient.name}, </span>
+                  ))}
+                  </div>
+                </div>
+                <div className={classes.steps}>
+                  <h4>Steps</h4>
+                  <div>
+                  {item.stepsEN.map((step: any, index: number) => (
+                    <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
+                  ))}
+                  </div>
                 </div>
               </div>
-              <div className={classes.steps}>
-                <h4>Steps</h4>
-                <div>
-                {item.stepsEN.map((step: any, index: number) => (
-                  <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
-                ))}
+              }
+              { language === 'jp' &&
+              <div>
+                <div className={classes.ingredients}>
+                  <h4>材料</h4>
+                  <div>
+                  {item.ingredientsJP.map((ingredient: any, index: number) => (
+                    <span key={"ingredient-"+index}>{ingredient.name}, </span>
+                  ))}
+                  </div>
+                </div>
+                <div className={classes.steps}>
+                  <h4>ステップ</h4>
+                  <div>
+                  {item.stepsJP.map((step: any, index: number) => (
+                    <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
+                  ))}
+                  </div>
                 </div>
               </div>
+              }
             </div>
           </TabPanel>
         </SwipeableViews>

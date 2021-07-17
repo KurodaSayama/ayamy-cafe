@@ -7,3 +7,7 @@
     transform: scale(1.05);
     z-index: 1;
 }
+
+.MuiToggleButton-root.Mui-selected {
+    background-color: #FFE1E3 !important;
+}
