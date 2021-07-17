@@ -163,9 +163,9 @@ function RecipeTabs (props: any) {
           aria-label="Recipe Tabs"
           className={classes.tabs}
         >
-          <Tab className={classes.firstTab} label="Video" {...a11yProps(0)} />
+          <Tab className={classes.firstTab} label="ビデオ (Video)" {...a11yProps(0)} />
           {item.recipeCard &&
-          <Tab label="Recipe" {...a11yProps(1)} />
+          <Tab label="レシピ (Recipe)" {...a11yProps(1)} />
           }
         </Tabs>      
         <SwipeableViews
