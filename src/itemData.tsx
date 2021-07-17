@@ -92,7 +92,7 @@ const itemData = [
     price: '5,000円',
     videoId: '1Ed8GLLJJHk',
     modalCols: 4,
-    recipeCard: false,
+    recipeCard: true,
     ingredientsEN: [
       { name: 'Sukiyaki sauce' },
       { name: 'Beef thinly sliced' },
