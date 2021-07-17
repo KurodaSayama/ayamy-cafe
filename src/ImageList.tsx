@@ -293,7 +293,7 @@ export default function SingleLineImageList() {
             <img src={item.img} alt={item.title} />
             <ImageListItemBar
               title={item.title}
-              subtitle={<span>価格：{item.price}</span>}
+              //subtitle={<span>価格：{item.price}</span>}
               classes={{
                 root: classes.titleBar,
               }}
@@ -320,11 +320,11 @@ export default function SingleLineImageList() {
               <Typography id={`transition-modal-title-${index}`} variant="h5" align="center">
                 {item.title}
               </Typography>
-              {item.price !== '????' &&
+              {/* {item.price !== '????' &&
               <Typography id={`transition-modal-description-${index}`} variant="body2" align="center" gutterBottom>
                 価格：{item.price}
               </Typography>
-              }
+              } */}
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={item.modalCols as GridSize}>
                   <Box display={{ xs: 'none', sm: 'none', md: 'block' }}>
