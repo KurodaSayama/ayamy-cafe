@@ -372,7 +372,7 @@ export default function SingleLineImageList() {
           }}
         >
           <Fade in={index === openIndex}>
-            <Container className={classes.paper} maxWidth="lg">
+            <Container className={classes.paper} maxWidth={xl ? 'lg' : 'md'}>
               <IconButton aria-label="close" onClick={handleClose} className={classes.closeButton}>
                 <CloseIcon />
               </IconButton>
