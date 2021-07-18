@@ -11,8 +11,23 @@ import hamburger from './images/image-list/hamburger.jpg';
 import oyakodon from './images/image-list/oyakodon.jpg';
 import steak from './images/image-list/steak.jpg';
 import tomato_salad from './images/image-list/tomato-salad.jpg';
+import corn_dog_tteokbokki from './images/image-list/corn-dog-tteokbokki.jpg';
 
 const itemData = [
+  {
+    img: corn_dog_tteokbokki,
+    title: 'コーンドッグとトッポッキ (Corn dog & Tteokbokki)',
+    titleEN: 'Corn dog & Tteokbokki',
+    titleJP: 'コーンドッグとトッポッキ',
+    price: '????',
+    videoId: '4tIF56lZMqo',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: tomato_salad,
     title: 'トマトサラダ (Tomato salad)',
@@ -417,8 +432,8 @@ const itemData = [
   {
     img: omurice,
     title: 'オムライス (Omurice)',
-    titleEN: 'オムライス',
-    titleJP: 'Omurice',
+    titleEN: 'Omurice',
+    titleJP: 'オムライス',
     price: '????',
     videoId: 'KNYf-ym6W-k',
     modalCols: 4,

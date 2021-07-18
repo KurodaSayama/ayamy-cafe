@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.b84c11b5.chunk.js",
-    "main.js.map": "/static/js/main.b84c11b5.chunk.js.map",
+    "main.js": "/static/js/main.428898f0.chunk.js",
+    "main.js.map": "/static/js/main.428898f0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/ayamy-cooking.ec2a38d1.png": "/static/media/ayamy-cooking.ec2a38d1.png",
     "static/media/bento.730e7202.jpg": "/static/media/bento.730e7202.jpg",
     "static/media/birthday-cake.fdcf797e.jpg": "/static/media/birthday-cake.fdcf797e.jpg",
+    "static/media/corn-dog-tteokbokki.37f6bd4a.jpg": "/static/media/corn-dog-tteokbokki.37f6bd4a.jpg",
     "static/media/french-toast.8e1d67d4.jpg": "/static/media/french-toast.8e1d67d4.jpg",
     "static/media/hamburger.b663e158.jpg": "/static/media/hamburger.b663e158.jpg",
     "static/media/katsu-curry.9b02ce32.jpg": "/static/media/katsu-curry.9b02ce32.jpg",
@@ -29,6 +30,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.b84c11b5.chunk.js"
+    "static/js/main.428898f0.chunk.js"
   ]
 }
