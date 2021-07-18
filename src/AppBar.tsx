@@ -1,6 +1,5 @@
 import MuiAppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -28,18 +27,14 @@ export default function AppBar() {
         <a href="/" className={classes.link}>
           <FontAwesomeIcon icon={faCoffee} size="2x" className={classes.icon} />
           <Box m={1} />
-          <Grid container>
-            <Grid item xs={12}>
-              <Typography variant="h6" color="inherit" noWrap>
-                あやみカフェ
+          <Box>
+            <Typography variant="h6" color="inherit" noWrap>
+              あやみカフェ
             </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="body2" color="inherit" noWrap>
-                Ayamy Cafe
+            <Typography variant="body2" color="inherit" noWrap>
+              Ayamy Cafe
             </Typography>
-            </Grid>
-          </Grid>
+          </Box>
         </a>
       </Toolbar>
     </MuiAppBar>

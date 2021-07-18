@@ -18,10 +18,15 @@ import Tab from '@material-ui/core/Tab';
 import SwipeableViews from 'react-swipeable-views';
 import YouTube from 'react-youtube';
 import itemData from './itemData';
-import QRCode from  'qrcode.react';
+import QRCode from 'qrcode.react';
 import ReactToPrint from "react-to-print";
 import IconButton from '@material-ui/core/IconButton';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+
 import PrintIcon from '@material-ui/icons/Print';
+import CloseIcon from '@material-ui/icons/Close';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
@@ -71,17 +76,17 @@ const useStyles = makeStyles((theme) => ({
     justifyItems: 'flex-end',
   },
   ingredients: {
-    margin: '10px',
-    padding: '10px',
+    margin: '10px 0px',
+    padding: '2px 20px 20px 20px',
     backgroundColor: '#FFE1E3',
     borderRadius: '6px',
   },
   steps: {
-    margin: '10px',
+    margin: '10px 0px',
     padding: '10px',
   },
   step: {
-    marginBottom:'10px',
+    marginBottom: '10px',
     fontSize: '12px',
   },
   icon: {
@@ -94,11 +99,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '20px solid #ffe1e0',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(3),
     width: '100%',
     outline: 'none',
-    maxHeight: '90vh',
+    maxHeight: '87vh',
     overflow: 'auto',
+  },
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: 'white',
+    mixBlendMode: 'difference',
   },
 }));
 
@@ -121,7 +133,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box p={2}>
+        <Box padding={0} paddingTop={2}>
           {children}
         </Box>
       )}
@@ -136,11 +148,12 @@ function a11yProps(index: any) {
   };
 }
 
-function RecipeTabs (props: any) {
+function RecipeTabs(props: any) {
   const item = props.item
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+  const [language, setLanguage] = React.useState<string | null>('en');
   let printRef: any;
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
@@ -150,6 +163,33 @@ function RecipeTabs (props: any) {
   const handleChangeIndex = (index: number) => {
     setValue(index);
   };
+
+  const handleLanguage = (event: React.MouseEvent<HTMLElement>, newAlignment: string | null) => {
+    if (newAlignment !== null) {
+      setLanguage(newAlignment);
+    }
+  };
+
+  const ingredientText = (index: number, length: number, name: string) => {
+    if (index === (length - 1)) {
+      return `& ${name}.`;
+    }
+    else if (index === (length - 2)) {
+      return `${name} `;
+    }
+    else {
+      return `${name}, `;
+    }
+  }
+
+  const ingredientTextJP = (index: number, length: number, name: string) => {
+    if (index === (length - 1)) {
+      return ` ${name}。`;
+    }
+    else {
+      return `${name}、 `;
+    }
+  }
 
   return (
     <div className={classes.root}>
@@ -163,11 +203,11 @@ function RecipeTabs (props: any) {
           aria-label="Recipe Tabs"
           className={classes.tabs}
         >
-          <Tab className={classes.firstTab} label="Video" {...a11yProps(0)} />
+          <Tab className={classes.firstTab} label="ビデオ (Video)" {...a11yProps(0)} />
           {item.recipeCard &&
-          <Tab label="Recipe" {...a11yProps(1)} />
+            <Tab label="レシピ (Recipe)" {...a11yProps(1)} />
           }
-        </Tabs>      
+        </Tabs>
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           disableLazyLoading
@@ -177,62 +217,102 @@ function RecipeTabs (props: any) {
           <TabPanel value={value} index={0} dir={theme.direction}>
             <YouTube videoId={item.videoId} containerClassName={'youtubeContainer'} />
           </TabPanel>
-          <TabPanel  value={value} index={1} dir={theme.direction}>
+          <TabPanel value={value} index={1} dir={theme.direction}>
             <div ref={(el) => (printRef = el)}>
               <div className={classes.recipeCardHeader}>
                 <div>
                   <div className={classes.recipeCardLogo}>
                     <FontAwesomeIcon icon={faCoffee} size="4x" className={classes.icon} />
                     <Box m={1} />
-                    <Grid container>
-                      <Grid item xs={12}>
-                        <Typography variant="h4" color="inherit" noWrap>
-                          あやみカフェ
+                    <Box>
+                      <Typography variant="h4" color="inherit" noWrap>
+                        あやみカフェ
                       </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography variant="h5" color="inherit" noWrap>
-                          Ayamy Cafe
+                      <Typography variant="h5" color="inherit" noWrap>
+                        Ayamy Cafe
                       </Typography>
-                      </Grid>
-                    </Grid>
+                    </Box>
                   </div>
 
                   <Typography variant="h6" align="left">
-                  <Box display="none" displayPrint="box">
-                    {item.title}
-                  </Box>
-                  <Box displayPrint="none">
-                    {item.title}
-                    <ReactToPrint
-                      trigger={() => <IconButton aria-label="print">
-                        <PrintIcon/>
-                      </IconButton>}
-                      content={() => printRef}
-                    />
-                  </Box>
-                   
+                    <Box display="none" displayPrint="box">
+                      {language === 'en' ? item.titleEN : item.titleJP}
+                    </Box>
+                    <Box displayPrint="none">
+                      {language === 'en' ? item.titleEN : item.titleJP}
+                      <ReactToPrint
+                        pageStyle={""}
+                        trigger={() => <IconButton aria-label="print">
+                          <PrintIcon />
+                        </IconButton>}
+                        content={() => printRef}
+                      />
+                      <span>
+                        <ToggleButtonGroup
+                          value={language}
+                          exclusive
+                          onChange={handleLanguage}
+                          aria-label="Language select"
+                          size="small"
+                        >
+                          <ToggleButton value="en" aria-label="View in English" title="View in English">
+                            EN
+                        </ToggleButton>
+                          <ToggleButton value="jp" aria-label="日本語で見る" title="日本語で見る">
+                            JP
+                        </ToggleButton>
+                        </ToggleButtonGroup>
+                      </span>
+                    </Box>
                   </Typography>
                 </div>
-                
+
                 <QRCode size={128} includeMargin fgColor="#cfb1b0" value={"http://www.youtube.com/watch?v=" + item.videoId} />
               </div>
-              <div className={classes.ingredients}>
-                <h4>Ingredients</h4>
+              {language === 'en' &&
                 <div>
-                {item.ingredientsEN.map((ingredient: any, index: number) => (
-                  <span key={"ingredient-"+index}>{ingredient.name}, </span>
-                ))}
+                  <div className={classes.ingredients}>
+                    <h4>Ingredients</h4>
+                    <div>
+                      {item.ingredientsEN.map((ingredient: any, index: number) => (
+                        <span key={"ingredient-" + index}>
+                          {ingredientText(index, item.ingredientsEN.length, ingredient.name)}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={classes.steps}>
+                    <h4>Steps</h4>
+                    <div>
+                      {item.stepsEN.map((step: any, index: number) => (
+                        <div key={"step-" + index} className={classes.step}>{index + 1}. {step.step}</div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className={classes.steps}>
-                <h4>Steps</h4>
+              }
+              {language === 'jp' &&
                 <div>
-                {item.stepsEN.map((step: any, index: number) => (
-                  <div key={"step-"+index} className={classes.step}>{index + 1}. {step.step}</div>
-                ))}
+                  <div className={classes.ingredients}>
+                    <h4>材料</h4>
+                    <div>
+                      {item.ingredientsJP.map((ingredient: any, index: number) => (
+                        <span key={"ingredient-" + index}>
+                          {ingredientTextJP(index, item.ingredientsJP.length, ingredient.name)}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={classes.steps}>
+                    <h4>調理手順</h4>
+                    <div>
+                      {item.stepsJP.map((step: any, index: number) => (
+                        <div key={"step-" + index} className={classes.step}>{index + 1}. {step.step}</div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
+              }
             </div>
           </TabPanel>
         </SwipeableViews>
@@ -249,8 +329,6 @@ export default function SingleLineImageList() {
   const lg = useMediaQuery(theme.breakpoints.up('lg'));
   const md = useMediaQuery(theme.breakpoints.up('md'));
   const sm = useMediaQuery(theme.breakpoints.up('sm'));
-
-  
 
   var cols;
   if (xl) {
@@ -290,10 +368,10 @@ export default function SingleLineImageList() {
             className={'imageZoom'}
             onClick={() => handleOpen(index)}
           >
-            <img src={item.img} alt={item.title} />
+            <img src={item.img} alt={item.titleJP} />
             <ImageListItemBar
-              title={item.title}
-              subtitle={<span>価格：{item.price}</span>}
+              title={item.titleJP}
+              subtitle={<span>{item.titleEN}</span>}
               classes={{
                 root: classes.titleBar,
               }}
@@ -316,19 +394,20 @@ export default function SingleLineImageList() {
           }}
         >
           <Fade in={index === openIndex}>
-            <Container className={classes.paper} maxWidth="lg">
+            <Container className={classes.paper} maxWidth={xl ? 'lg' : 'md'}>
+              <IconButton aria-label="close" onClick={handleClose} className={classes.closeButton}>
+                <CloseIcon />
+              </IconButton>
               <Typography id={`transition-modal-title-${index}`} variant="h5" align="center">
-                {item.title}
+                {item.titleJP}
               </Typography>
-              {item.price !== '????' &&
               <Typography id={`transition-modal-description-${index}`} variant="body2" align="center" gutterBottom>
-                価格：{item.price}
+                {item.titleEN}
               </Typography>
-              }
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={item.modalCols as GridSize}>
                   <Box display={{ xs: 'none', sm: 'none', md: 'block' }}>
-                    <img src={item.img} alt={item.title} className={classes.recipeImg} />
+                    <img src={item.img} alt={item.titleJP} className={classes.recipeImg} />
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={(12 - item.modalCols) as GridSize}>
