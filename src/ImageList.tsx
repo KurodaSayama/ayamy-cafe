@@ -76,13 +76,13 @@ const useStyles = makeStyles((theme) => ({
     justifyItems: 'flex-end',
   },
   ingredients: {
-    margin: '10px',
-    padding: '10px',
+    margin: '10px 0px',
+    padding: '2px 20px 20px 20px',
     backgroundColor: '#FFE1E3',
     borderRadius: '6px',
   },
   steps: {
-    margin: '10px',
+    margin: '10px 0px',
     padding: '10px',
   },
   step: {
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
     width: '100%',
     outline: 'none',
-    maxHeight: '85vh',
+    maxHeight: '87vh',
     overflow: 'auto',
   },
   closeButton: {
@@ -170,6 +170,18 @@ function RecipeTabs(props: any) {
     }
   };
 
+  const ingredientText = (index: number, length: number, name: string) => {
+    if (index === (length - 1)) {
+      return `& ${name}.`;
+    }
+    else if (index === (length - 2)) {
+      return `${name} `;
+    }
+    else {
+      return `${name}, `;
+    }
+  }
+
   return (
     <div className={classes.root}>
       <div className={classes.modalRightContent}>
@@ -203,27 +215,24 @@ function RecipeTabs(props: any) {
                   <div className={classes.recipeCardLogo}>
                     <FontAwesomeIcon icon={faCoffee} size="4x" className={classes.icon} />
                     <Box m={1} />
-                    <Grid container>
-                      <Grid item xs={12}>
-                        <Typography variant="h4" color="inherit" noWrap>
-                          あやみカフェ
+                    <Box>
+                      <Typography variant="h4" color="inherit" noWrap>
+                        あやみカフェ
                       </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography variant="h5" color="inherit" noWrap>
-                          Ayamy Cafe
+                      <Typography variant="h5" color="inherit" noWrap>
+                        Ayamy Cafe
                       </Typography>
-                      </Grid>
-                    </Grid>
+                    </Box>
                   </div>
 
                   <Typography variant="h6" align="left">
                     <Box display="none" displayPrint="box">
-                      {item.title}
+                      {language === 'en' ? item.titleEN : item.titleJP}
                     </Box>
                     <Box displayPrint="none">
-                      {item.title}
+                      {language === 'en' ? item.titleEN : item.titleJP}
                       <ReactToPrint
+                        pageStyle={""}
                         trigger={() => <IconButton aria-label="print">
                           <PrintIcon />
                         </IconButton>}
@@ -257,7 +266,9 @@ function RecipeTabs(props: any) {
                     <h4>Ingredients</h4>
                     <div>
                       {item.ingredientsEN.map((ingredient: any, index: number) => (
-                        <span key={"ingredient-" + index}>{ingredient.name}, </span>
+                        <span key={"ingredient-" + index}>
+                          {ingredientText(index, item.ingredientsEN.length, ingredient.name)}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -277,7 +288,9 @@ function RecipeTabs(props: any) {
                     <h4>材料</h4>
                     <div>
                       {item.ingredientsJP.map((ingredient: any, index: number) => (
-                        <span key={"ingredient-" + index}>{ingredient.name}, </span>
+                        <span key={"ingredient-" + index}>
+                          {ingredientText(index, item.ingredientsJP.length, ingredient.name)}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -346,10 +359,10 @@ export default function SingleLineImageList() {
             className={'imageZoom'}
             onClick={() => handleOpen(index)}
           >
-            <img src={item.img} alt={item.title} />
+            <img src={item.img} alt={item.titleJP} />
             <ImageListItemBar
-              title={item.title}
-              //subtitle={<span>価格：{item.price}</span>}
+              title={item.titleJP}
+              subtitle={<span>{item.titleEN}</span>}
               classes={{
                 root: classes.titleBar,
               }}
@@ -377,17 +390,15 @@ export default function SingleLineImageList() {
                 <CloseIcon />
               </IconButton>
               <Typography id={`transition-modal-title-${index}`} variant="h5" align="center">
-                {item.title}
+                {item.titleJP}
               </Typography>
-              {/* {item.price !== '????' &&
               <Typography id={`transition-modal-description-${index}`} variant="body2" align="center" gutterBottom>
-                価格：{item.price}
+                {item.titleEN}
               </Typography>
-              } */}
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={item.modalCols as GridSize}>
                   <Box display={{ xs: 'none', sm: 'none', md: 'block' }}>
-                    <img src={item.img} alt={item.title} className={classes.recipeImg} />
+                    <img src={item.img} alt={item.titleJP} className={classes.recipeImg} />
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={(12 - item.modalCols) as GridSize}>

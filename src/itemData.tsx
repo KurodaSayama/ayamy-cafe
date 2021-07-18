@@ -15,7 +15,8 @@ import tomato_salad from './images/image-list/tomato-salad.jpg';
 const itemData = [
   {
     img: tomato_salad,
-    title: 'トマトサラダ (Tomato salad)',
+    titleJP: 'トマトサラダ',
+    titleEN: 'Tomato salad',
     price: '????',
     videoId: 'K0-apUyUfbQ',
     modalCols: 5,
@@ -46,7 +47,8 @@ const itemData = [
   },
   {
     img: steak,
-    title: 'ステーキ (Steak)',
+    titleJP: 'ステーキ',
+    titleEN: 'Steak',
     price: '????',
     videoId: 'IiuOwq97BRo',
     modalCols: 4,
@@ -89,7 +91,8 @@ const itemData = [
   },
   {
     img: sukiyaki,
-    title: 'すき焼き (Sukiyaki)',
+    titleJP: 'すき焼き',
+    titleEN: 'Sukiyaki',
     price: '5,000円',
     videoId: '1Ed8GLLJJHk',
     modalCols: 4,
@@ -108,7 +111,7 @@ const itemData = [
       { name: '2 Spring onion' },
       { name: 'Eggs' },
       { name: 'Oil' },
-      ],
+    ],
     ingredientsJP: [],
     stepsEN: [
       { step: 'Remove stalks and slice a star shape onto the top of the Shitaki Mushrooms', time: 2087 },
@@ -135,7 +138,8 @@ const itemData = [
   },
   {
     img: french_toast,
-    title: 'フレンチトースト (French toast)',
+    titleJP: 'フレンチトースト',
+    titleEN: 'French toast',
     price: 'Good question',
     videoId: 'UZdP0fDG8cg',
     modalCols: 4,
@@ -178,7 +182,8 @@ const itemData = [
   },
   {
     img: yakisoba,
-    title: '焼きそば (Yakisoba)',
+    titleJP: '焼きそば',
+    titleEN: 'Yakisoba',
     price: '2,000円',
     videoId: 'mbkE_SqVR58',
     modalCols: 5,
@@ -223,7 +228,8 @@ const itemData = [
   },
   {
     img: oyakodon,
-    title: '親子丼 (Oyakodon)',
+    titleJP: '親子丼',
+    titleEN: 'Oyakodon',
     price: '????',
     videoId: 'dMYMXT6uGrY',
     modalCols: 4,
@@ -258,7 +264,8 @@ const itemData = [
   },
   {
     img: yakitori,
-    title: '焼き鳥 (Yakitori)',
+    titleJP: '焼き鳥',
+    titleEN: 'Yakitori',
     price: '500円',
     videoId: 'OdYSQ_I7gYQ',
     modalCols: 5,
@@ -302,7 +309,8 @@ const itemData = [
   },
   {
     img: birthday_cake,
-    title: '誕生日ケーキ (Birthday cake)',
+    titleJP: '誕生日ケーキ',
+    titleEN: 'Birthday cake',
     price: '????',
     videoId: 'ITC4esgZbAA',
     modalCols: 5,
@@ -359,7 +367,8 @@ const itemData = [
   },
   {
     img: napolitan_pasta,
-    title: 'ナポリタン (Napolitan pasta)',
+    titleJP: 'ナポリタン',
+    titleEN: 'Napolitan pasta',
     price: '????',
     videoId: 'N-jbTbpLOJU',
     modalCols: 4,
@@ -398,7 +407,8 @@ const itemData = [
   },
   {
     img: omurice,
-    title: 'オムライス (Omurice)',
+    titleJP: 'オムライス',
+    titleEN: 'Omurice',
     price: '????',
     videoId: 'KNYf-ym6W-k',
     modalCols: 4,
@@ -410,7 +420,8 @@ const itemData = [
   },
   {
     img: katsu_curry,
-    title: 'カツカレー (Katsukare)',
+    titleJP: 'カツカレー',
+    titleEN: 'Katsukare',
     price: '????',
     videoId: 'Z6wMEJf8wJk',
     modalCols: 5,
@@ -456,7 +467,8 @@ const itemData = [
   },
   {
     img: bento,
-    title: 'お弁当 (Bento)',
+    titleJP: 'お弁当',
+    titleEN: 'Bento',
     price: '????',
     videoId: 'Om-HYEPV1O4',
     modalCols: 5,
@@ -510,7 +522,8 @@ const itemData = [
   },
   {
     img: hamburger,
-    title: 'ハンバーガー (Hamburger)',
+    titleJP: 'ハンバーガー',
+    titleEN: 'Hamburger',
     price: '????',
     videoId: '4MdM34zBqI8',
     modalCols: 4,
