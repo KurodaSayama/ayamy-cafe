@@ -448,7 +448,7 @@ const itemData = [
       { step: 'Carefully flip the omelette so the opening is facing down to allow it to seal', time: 10524},
       { step: 'Lay down the omelette on top of the rice', time: 10558},
       { step: 'Use a bottle of ketchup and write on your omelette', time: 11654},
-      { step: 'make an incision in the middle of the omelette and add the Demi Glace sauce + the Dried Parsley on top.', time: 12234},
+      { step: 'make an incision in the middle of the omelette and add the Demi Glace sauce + the Dried Parsley on top', time: 12234},
     ],
     stepsJP: [],
   },
