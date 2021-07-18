@@ -182,6 +182,15 @@ function RecipeTabs(props: any) {
     }
   }
 
+  const ingredientTextJP = (index: number, length: number, name: string) => {
+    if (index === (length - 1)) {
+      return ` ${name}。`;
+    }
+    else {
+      return `${name}、 `;
+    }
+  }
+
   return (
     <div className={classes.root}>
       <div className={classes.modalRightContent}>
@@ -289,13 +298,13 @@ function RecipeTabs(props: any) {
                     <div>
                       {item.ingredientsJP.map((ingredient: any, index: number) => (
                         <span key={"ingredient-" + index}>
-                          {ingredientText(index, item.ingredientsJP.length, ingredient.name)}
+                          {ingredientTextJP(index, item.ingredientsJP.length, ingredient.name)}
                         </span>
                       ))}
                     </div>
                   </div>
                   <div className={classes.steps}>
-                    <h4>ステップ</h4>
+                    <h4>調理手順</h4>
                     <div>
                       {item.stepsJP.map((step: any, index: number) => (
                         <div key={"step-" + index} className={classes.step}>{index + 1}. {step.step}</div>
