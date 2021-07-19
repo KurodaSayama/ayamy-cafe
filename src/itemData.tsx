@@ -21,7 +21,7 @@ const itemData = [
     titleJP: 'コーンドッグとトッポッキ',
     price: '????',
     videoId: '4tIF56lZMqo',
-    modalCols: 5,
+    modalCols: 4,
     recipeCard: false,
     ingredientsEN: [],
     ingredientsJP: [],
