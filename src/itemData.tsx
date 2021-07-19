@@ -12,12 +12,16 @@ import oyakodon from './images/image-list/oyakodon.jpg';
 import steak from './images/image-list/steak.jpg';
 import tomato_salad from './images/image-list/tomato-salad.jpg';
 import corn_dog_tteokbokki from './images/image-list/corn-dog-tteokbokki.jpg';
+import butter_cookie from './images/image-list/butter-cookie.jpg';
+import waffle from './images/image-list/waffle.jpg';
+import takoyaki from './images/image-list/takoyaki.jpg';
+import spam_musubi from './images/image-list/spam-musubi.jpg';
 
 const itemData = [
   {
     img: corn_dog_tteokbokki,
-    title: 'コーンドッグとトッポッキ (Corn dog & Tteokbokki)',
-    titleEN: 'Corn dog & Tteokbokki',
+    title: 'コーンドッグとトッポッキ (Corn dog & tteokbokki)',
+    titleEN: 'Corn dog & tteokbokki',
     titleJP: 'コーンドッグとトッポッキ',
     price: '????',
     videoId: '4tIF56lZMqo',
@@ -518,6 +522,20 @@ const itemData = [
     stepsJP: [],
   },
   {
+    img: spam_musubi,
+    title: 'スパムむすび (Spam musubi)',
+    titleEN: 'Spam musubi',
+    titleJP: 'スパムむすび',
+    price: '????',
+    videoId: 'ovxzXRLozvM',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
+  {
     img: bento,
     title: 'お弁当 (Bento)',
     titleEN: 'Bento',
@@ -678,6 +696,48 @@ const itemData = [
       { step: 'ベーコンの上にピクルスを乗せます', time: 3553 },
       { step: 'バンズの残り半分を上に乗せます', time: 3800 },
     ],
+  },
+  {
+    img: waffle,
+    title: 'ワッフル (Waffle)',
+    titleEN: 'Waffle',
+    titleJP: 'ワッフル',
+    price: '????',
+    videoId: 'OJd-gsbU7HY',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
+  {
+    img: takoyaki,
+    title: 'たこ焼き (Takoyaki)',
+    titleEN: 'Takoyaki',
+    titleJP: 'たこ焼き',
+    price: '????',
+    videoId: 'hj3KM5_1hT4',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
+  {
+    img: butter_cookie,
+    title: 'バタークッキー (Butter cookie)',
+    titleEN: 'Butter cookie',
+    titleJP: 'バタークッキー',
+    price: '????',
+    videoId: 'zL5N3gr-nfY',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
   },
 ];
 
