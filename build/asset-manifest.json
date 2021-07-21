@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.94dcfa60.chunk.js",
-    "main.js.map": "/static/js/main.94dcfa60.chunk.js.map",
+    "main.js": "/static/js/main.08f70d59.chunk.js",
+    "main.js.map": "/static/js/main.08f70d59.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -17,6 +17,7 @@
     "static/media/corn-dog-tteokbokki.96550ef0.jpg": "/static/media/corn-dog-tteokbokki.96550ef0.jpg",
     "static/media/french-toast.8e1d67d4.jpg": "/static/media/french-toast.8e1d67d4.jpg",
     "static/media/hamburger.b663e158.jpg": "/static/media/hamburger.b663e158.jpg",
+    "static/media/inari-sushi.b00ae2ce.jpg": "/static/media/inari-sushi.b00ae2ce.jpg",
     "static/media/katsu-curry.9b02ce32.jpg": "/static/media/katsu-curry.9b02ce32.jpg",
     "static/media/napolitan-pasta.7f096b73.jpg": "/static/media/napolitan-pasta.7f096b73.jpg",
     "static/media/omurice.3a93a1c4.jpg": "/static/media/omurice.3a93a1c4.jpg",
@@ -34,6 +35,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.94dcfa60.chunk.js"
+    "static/js/main.08f70d59.chunk.js"
   ]
 }

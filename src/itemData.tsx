@@ -16,8 +16,23 @@ import butter_cookie from './images/image-list/butter-cookie.jpg';
 import waffle from './images/image-list/waffle.jpg';
 import takoyaki from './images/image-list/takoyaki.jpg';
 import spam_musubi from './images/image-list/spam-musubi.jpg';
+import inari_sushi from './images/image-list/inari-sushi.jpg';
 
 const itemData = [
+  {
+    img: inari_sushi,
+    title: 'いなり寿司 (Inari sushi)',
+    titleEN: 'Inari sushi',
+    titleJP: 'いなり寿司',
+    price: '????',
+    videoId: 'gVLwPI5qVhQ',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: corn_dog_tteokbokki,
     title: 'コーンドッグとトッポッキ (Corn dog & tteokbokki)',
