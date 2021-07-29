@@ -17,8 +17,23 @@ import waffle from './images/image-list/waffle.jpg';
 import takoyaki from './images/image-list/takoyaki.jpg';
 import spam_musubi from './images/image-list/spam-musubi.jpg';
 import inari_sushi from './images/image-list/inari-sushi.jpg';
+import curry_udon from './images/image-list/curry-udon.jpg';
 
 const itemData = [
+  {
+    img: curry_udon,
+    title: 'カレーうどん (Curry udon)',
+    titleEN: 'Curry udon',
+    titleJP: 'カレーうどん',
+    price: '????',
+    videoId: 'Jgx5AnMWgL4',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: inari_sushi,
     title: 'いなり寿司 (Inari sushi)',
