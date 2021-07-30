@@ -35,10 +35,7 @@ export default function Hero() {
                 <Grid container spacing={2} direction="column">
                   <Grid item xs={12}>
                     <Typography component="h1" variant="h3" align="center" color="textPrimary">
-                      あやみカフェ
-        </Typography>
-                    <Typography component="h1" variant="h6" align="center" color="textPrimary" gutterBottom>
-                      Ayamy Cafe
+                      あやみCafe
         </Typography>
                   </Grid>
                   <Grid item xs={12}>

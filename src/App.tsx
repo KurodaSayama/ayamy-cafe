@@ -38,10 +38,7 @@ export default function App() {
       <footer className={classes.footer}>
         <FontAwesomeIcon icon={faCoffee} size="2x" />
         <Typography variant="h6" align="center">
-          あやみカフェ
-        </Typography>
-        <Typography variant="body2" align="center">
-          Ayamy Cafe
+          あやみCafe
         </Typography>
         <Box m={2} />
         <a href="https://github.com/KurodaSayama/ayamy-cafe" target="_blank" rel="noreferrer">

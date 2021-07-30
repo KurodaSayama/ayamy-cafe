@@ -226,10 +226,7 @@ function RecipeTabs(props: any) {
                     <Box m={1} />
                     <Box>
                       <Typography variant="h4" color="inherit" noWrap>
-                        あやみカフェ
-                      </Typography>
-                      <Typography variant="h5" color="inherit" noWrap>
-                        Ayamy Cafe
+                        あやみCafe
                       </Typography>
                     </Box>
                   </div>

@@ -29,10 +29,7 @@ export default function AppBar() {
           <Box m={1} />
           <Box>
             <Typography variant="h6" color="inherit" noWrap>
-              あやみカフェ
-            </Typography>
-            <Typography variant="body2" color="inherit" noWrap>
-              Ayamy Cafe
+              あやみCafe
             </Typography>
           </Box>
         </a>
