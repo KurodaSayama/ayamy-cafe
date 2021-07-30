@@ -61,7 +61,7 @@ export default function Hero() {
           <Grid item xs={12} className={classes.embedsContainer}>
             <Grid container spacing={4}>
               <Grid item xs={12} md={8}>
-                <YouTube videoId="dFzSIFr4pHU" containerClassName={'youtubeContainer'} />
+                <YouTube videoId="BraLDTnzUpM" containerClassName={'youtubeContainer'} />
               </Grid>
               <Grid item xs={12} md={4}>
                 <Follow
