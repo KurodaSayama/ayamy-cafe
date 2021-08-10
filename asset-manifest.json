@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.2391427b.chunk.js",
-    "main.js.map": "/static/js/main.2391427b.chunk.js.map",
+    "main.js": "/static/js/main.13c6b201.chunk.js",
+    "main.js.map": "/static/js/main.13c6b201.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/ayamy-cooking.ec2a38d1.png": "/static/media/ayamy-cooking.ec2a38d1.png",
     "static/media/bento.730e7202.jpg": "/static/media/bento.730e7202.jpg",
     "static/media/birthday-cake.fdcf797e.jpg": "/static/media/birthday-cake.fdcf797e.jpg",
+    "static/media/butadon.487decf2.jpg": "/static/media/butadon.487decf2.jpg",
     "static/media/butter-cookie.2e7fa3c8.jpg": "/static/media/butter-cookie.2e7fa3c8.jpg",
     "static/media/corn-dog-tteokbokki.96550ef0.jpg": "/static/media/corn-dog-tteokbokki.96550ef0.jpg",
     "static/media/curry-udon.2064678c.jpg": "/static/media/curry-udon.2064678c.jpg",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.2391427b.chunk.js"
+    "static/js/main.13c6b201.chunk.js"
   ]
 }
