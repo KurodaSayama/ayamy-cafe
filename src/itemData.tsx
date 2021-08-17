@@ -19,8 +19,23 @@ import spam_musubi from './images/image-list/spam-musubi.jpg';
 import inari_sushi from './images/image-list/inari-sushi.jpg';
 import curry_udon from './images/image-list/curry-udon.jpg';
 import butadon from './images/image-list/butadon.jpg';
+import eggs_in_hell from './images/image-list/eggs-in-hell.jpg';
 
 const itemData = [
+  {
+    img: eggs_in_hell,
+    title: 'シャクシューカ (Eggs in hell)',
+    titleEN: 'Eggs in hell (Shakshuka)',
+    titleJP: 'シャクシューカ ',
+    price: '????',
+    videoId: 'eAYYBo31Yag',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: butadon,
     title: '豚丼 (Butadon)',
