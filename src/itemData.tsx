@@ -20,13 +20,28 @@ import inari_sushi from './images/image-list/inari-sushi.jpg';
 import curry_udon from './images/image-list/curry-udon.jpg';
 import butadon from './images/image-list/butadon.jpg';
 import eggs_in_hell from './images/image-list/eggs-in-hell.jpg';
+import dak_galbi from './images/image-list/dak-galbi.jpg';
 
 const itemData = [
+  {
+    img: dak_galbi,
+    title: 'タッカルビ (Dak-galbi)',
+    titleEN: 'Dak-galbi',
+    titleJP: 'タッカルビ',
+    price: '????',
+    videoId: 'LNIT8gx-mug',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: eggs_in_hell,
     title: 'シャクシューカ (Eggs in hell)',
     titleEN: 'Eggs in hell (Shakshuka)',
-    titleJP: 'シャクシューカ ',
+    titleJP: 'シャクシューカ',
     price: '????',
     videoId: 'eAYYBo31Yag',
     modalCols: 5,
