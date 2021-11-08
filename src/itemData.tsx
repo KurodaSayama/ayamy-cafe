@@ -21,8 +21,23 @@ import curry_udon from './images/image-list/curry-udon.jpg';
 import butadon from './images/image-list/butadon.jpg';
 import eggs_in_hell from './images/image-list/eggs-in-hell.jpg';
 import dak_galbi from './images/image-list/dak-galbi.jpg';
+import korean_chicken from './images/image-list/korean-chicken.jpg';
 
 const itemData = [
+  {
+    img: korean_chicken,
+    title: 'フライドチキン (Korean chicken)',
+    titleEN: 'Korean chicken',
+    titleJP: 'フライドチキン',
+    price: '????',
+    videoId: 'CXiR7-5O8NQ',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: dak_galbi,
     title: 'タッカルビ (Dak-galbi)',
