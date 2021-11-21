@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.a489844a.chunk.js",
-    "main.js.map": "/static/js/main.a489844a.chunk.js.map",
+    "main.js": "/static/js/main.be53616f.chunk.js",
+    "main.js.map": "/static/js/main.be53616f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -30,6 +30,7 @@
     "static/media/spam-musubi.a08a6295.jpg": "/static/media/spam-musubi.a08a6295.jpg",
     "static/media/steak.4e1ab8ce.jpg": "/static/media/steak.4e1ab8ce.jpg",
     "static/media/sukiyaki.0c82a74b.jpg": "/static/media/sukiyaki.0c82a74b.jpg",
+    "static/media/taiyaki.a53c6185.jpg": "/static/media/taiyaki.a53c6185.jpg",
     "static/media/takoyaki.a52f5bb8.jpg": "/static/media/takoyaki.a52f5bb8.jpg",
     "static/media/tomato-salad.a7a94598.jpg": "/static/media/tomato-salad.a7a94598.jpg",
     "static/media/waffle.8d85ed20.jpg": "/static/media/waffle.8d85ed20.jpg",
@@ -40,6 +41,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.a489844a.chunk.js"
+    "static/js/main.be53616f.chunk.js"
   ]
 }

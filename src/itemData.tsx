@@ -22,8 +22,23 @@ import butadon from './images/image-list/butadon.jpg';
 import eggs_in_hell from './images/image-list/eggs-in-hell.jpg';
 import dak_galbi from './images/image-list/dak-galbi.jpg';
 import korean_chicken from './images/image-list/korean-chicken.jpg';
+import taiyaki from './images/image-list/taiyaki.jpg';
 
 const itemData = [
+  {
+    img: taiyaki,
+    title: 'たい焼き (Taiyaki)',
+    titleEN: 'Taiyaki',
+    titleJP: 'たい焼き',
+    price: '????',
+    videoId: '56J8FkZqc3o',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: korean_chicken,
     title: 'フライドチキン (Korean chicken)',
