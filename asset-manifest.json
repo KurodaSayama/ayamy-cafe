@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.be53616f.chunk.js",
-    "main.js.map": "/static/js/main.be53616f.chunk.js.map",
+    "main.js": "/static/js/main.07352f4e.chunk.js",
+    "main.js.map": "/static/js/main.07352f4e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/butadon.487decf2.jpg": "/static/media/butadon.487decf2.jpg",
     "static/media/butter-cookie.2e7fa3c8.jpg": "/static/media/butter-cookie.2e7fa3c8.jpg",
     "static/media/corn-dog-tteokbokki.96550ef0.jpg": "/static/media/corn-dog-tteokbokki.96550ef0.jpg",
+    "static/media/cream-stew.f0281fb9.jpg": "/static/media/cream-stew.f0281fb9.jpg",
     "static/media/curry-udon.2064678c.jpg": "/static/media/curry-udon.2064678c.jpg",
     "static/media/dak-galbi.d5050d69.jpg": "/static/media/dak-galbi.d5050d69.jpg",
     "static/media/eggs-in-hell.52b825a4.jpg": "/static/media/eggs-in-hell.52b825a4.jpg",
@@ -41,6 +42,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.be53616f.chunk.js"
+    "static/js/main.07352f4e.chunk.js"
   ]
 }
