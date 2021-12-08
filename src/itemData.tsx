@@ -23,8 +23,23 @@ import eggs_in_hell from './images/image-list/eggs-in-hell.jpg';
 import dak_galbi from './images/image-list/dak-galbi.jpg';
 import korean_chicken from './images/image-list/korean-chicken.jpg';
 import taiyaki from './images/image-list/taiyaki.jpg';
+import cream_stew from './images/image-list/cream-stew.jpg';
 
 const itemData = [
+  {
+    img: cream_stew,
+    title: 'クリームシチュー (Cream stew)',
+    titleEN: 'Cream stew',
+    titleJP: 'クリームシチュー',
+    price: '????',
+    videoId: 'WmwgmSHvenA',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: taiyaki,
     title: 'たい焼き (Taiyaki)',
