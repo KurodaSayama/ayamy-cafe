@@ -24,8 +24,38 @@ import dak_galbi from './images/image-list/dak-galbi.jpg';
 import korean_chicken from './images/image-list/korean-chicken.jpg';
 import taiyaki from './images/image-list/taiyaki.jpg';
 import cream_stew from './images/image-list/cream-stew.jpg';
+import pizza from './images/image-list/pizza.jpg';
+import hotteok from './images/image-list/hotteok.jpg';
 
 const itemData = [
+  {
+    img: hotteok,
+    title: 'ホットク (Hotteok)',
+    titleEN: 'Hotteok',
+    titleJP: 'ホットク',
+    price: '????',
+    videoId: 'ljDQKVJZIaA',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
+  {
+    img: pizza,
+    title: 'ピザ (Pizza)',
+    titleEN: 'Pizza',
+    titleJP: 'ピザ',
+    price: '????',
+    videoId: '_n-83i6OCBE',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: cream_stew,
     title: 'クリームシチュー (Cream stew)',
