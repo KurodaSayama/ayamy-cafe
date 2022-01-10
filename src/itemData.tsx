@@ -26,8 +26,23 @@ import taiyaki from './images/image-list/taiyaki.jpg';
 import cream_stew from './images/image-list/cream-stew.jpg';
 import pizza from './images/image-list/pizza.jpg';
 import hotteok from './images/image-list/hotteok.jpg';
+import mapo_tofu from './images/image-list/mapo-tofu.jpg';
 
 const itemData = [
+  {
+    img: mapo_tofu,
+    title: 'マーボードウフ (Mapo tofu)',
+    titleEN: 'Mapo tofu',
+    titleJP: 'マーボードウフ',
+    price: '????',
+    videoId: 'GhNAWcnMGaw',
+    modalCols: 5,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: hotteok,
     title: 'ホットク (Hotteok)',
