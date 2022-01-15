@@ -27,8 +27,23 @@ import cream_stew from './images/image-list/cream-stew.jpg';
 import pizza from './images/image-list/pizza.jpg';
 import hotteok from './images/image-list/hotteok.jpg';
 import mapo_tofu from './images/image-list/mapo-tofu.jpg';
+import strawberry_burrata_salad from './images/image-list/strawberry-burrata-salad.jpg';
 
 const itemData = [
+  {
+    img: strawberry_burrata_salad,
+    title: 'いちごブッラータサラダ (Strawberry burrata salad)',
+    titleEN: 'Strawberry burrata salad',
+    titleJP: 'いちごブッラータサラダ',
+    price: '????',
+    videoId: 'bliszwORCR0',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: mapo_tofu,
     title: 'マーボードウフ (Mapo tofu)',
