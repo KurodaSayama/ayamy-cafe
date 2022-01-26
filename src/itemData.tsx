@@ -28,8 +28,23 @@ import pizza from './images/image-list/pizza.jpg';
 import hotteok from './images/image-list/hotteok.jpg';
 import mapo_tofu from './images/image-list/mapo-tofu.jpg';
 import strawberry_burrata_salad from './images/image-list/strawberry-burrata-salad.jpg';
+import fried_tofu from './images/image-list/fried-tofu.jpg';
 
 const itemData = [
+  {
+    img: fried_tofu,
+    title: '揚げ出し豆腐 (Fried tofu with soup stock)',
+    titleEN: 'Fried tofu with soup stock',
+    titleJP: '揚げ出し豆腐',
+    price: '????',
+    videoId: 'fyLFp8zyw8o',
+    modalCols: 4,
+    recipeCard: false,
+    ingredientsEN: [],
+    ingredientsJP: [],
+    stepsEN: [],
+    stepsJP: [],
+  },
   {
     img: strawberry_burrata_salad,
     title: 'いちごブッラータサラダ (Strawberry burrata salad)',

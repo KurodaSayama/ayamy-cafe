@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e7552a9c.chunk.css",
-    "main.js": "/static/js/main.ea76d962.chunk.js",
-    "main.js.map": "/static/js/main.ea76d962.chunk.js.map",
+    "main.js": "/static/js/main.35ebaf58.chunk.js",
+    "main.js.map": "/static/js/main.35ebaf58.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.849ea8fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.849ea8fb.js.map",
     "static/js/2.fd0f12a1.chunk.js": "/static/js/2.fd0f12a1.chunk.js",
@@ -21,6 +21,7 @@
     "static/media/dak-galbi.d5050d69.jpg": "/static/media/dak-galbi.d5050d69.jpg",
     "static/media/eggs-in-hell.52b825a4.jpg": "/static/media/eggs-in-hell.52b825a4.jpg",
     "static/media/french-toast.8e1d67d4.jpg": "/static/media/french-toast.8e1d67d4.jpg",
+    "static/media/fried-tofu.f1311302.jpg": "/static/media/fried-tofu.f1311302.jpg",
     "static/media/hamburger.b663e158.jpg": "/static/media/hamburger.b663e158.jpg",
     "static/media/hotteok.6368e90e.jpg": "/static/media/hotteok.6368e90e.jpg",
     "static/media/inari-sushi.b00ae2ce.jpg": "/static/media/inari-sushi.b00ae2ce.jpg",
@@ -46,6 +47,6 @@
     "static/js/runtime-main.849ea8fb.js",
     "static/js/2.fd0f12a1.chunk.js",
     "static/css/main.e7552a9c.chunk.css",
-    "static/js/main.ea76d962.chunk.js"
+    "static/js/main.35ebaf58.chunk.js"
   ]
 }
